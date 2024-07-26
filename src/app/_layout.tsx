@@ -1,3 +1,4 @@
+import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
@@ -11,7 +12,11 @@ const App = () => {
 }
 
 const RootNavigation = () => {
-  return <></>
+  return (
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    </Stack>
+  )
 }
 
 export default App
